@@ -1,4 +1,4 @@
-> ### *Able was I ere I saw Elba* - Napolean
+> ### *Able was I ere I saw Elba* – Napoleon
 
 Elba makes JavaScript appear to be written backwards. For example,
 
