@@ -46,8 +46,8 @@ If both these are true, then it will be displayed backwards by any text-editor t
 bi-directional text and will still work exactly as intended. The code only _appears_ backwards in the editor.
 
 Let's call the user specified source code `S`. We first remove all comments and line-breaks from `S`. We then prepend the source code with
-`_elba = \u202E;`.
+`_elba = '\u202E';`.
 
-Then, `_elba = \u202E; S` is both a one-line string, AND valid JavaScript (when interpreted).
+Then, `_elba = '\u202E'; S` is both a one-line string, AND valid JavaScript (when interpreted).
 
 ∎ .D.E.Q
