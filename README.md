@@ -11,7 +11,7 @@ Elba makes JavaScript appear to be written backwards. For example,
 Will become
 
 ```
-_elba='‮';(function hi(){ console.log('hi')})()
+'‮';(function hi(){ console.log('elba');})();
 ```
 
 When either version is executed it will log the string `elba`. Try it in your JavaScript console.
@@ -46,8 +46,4 @@ If both these are true, then it will be displayed backwards by any text-editor t
 bi-directional text and will still work exactly as intended. The code only _appears_ backwards in the editor.
 
 Let's call the user specified source code `S`. We first remove all comments and line-breaks from `S`. We then prepend the source code with
-`_elba = '\u202E';`.
-
-Then, `_elba = '\u202E'; S` is both a one-line string, AND valid JavaScript (when interpreted).
-
-∎ .D.E.Q
+`'\u202E';`. Then, `'\u202E'; S` is both a one-line string, AND valid JavaScript (when interpreted). 🙃

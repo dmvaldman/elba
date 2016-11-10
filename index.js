@@ -6,8 +6,7 @@ if (!file) process.exit(0);
 
 var readStream = fs.createReadStream(file, 'utf8');
 
-// Prepend this to the source code (note: _elba will be a global variable)
-var text = "_elba='\u202E';";
+var text = "'\u202E';"; // Prepend this to the source code
 readStream.on('data', function(buf){
     var str = buf.toString('utf8');
     str = str.replace(/(\/\*([\s\S]*?)\*\/)|(\/\/(.*)$)/gm, ""); // replace comments and multiple spaces
