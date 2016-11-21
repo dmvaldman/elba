@@ -4,6 +4,10 @@
   "author": "David Valdman",
   "version": "0.0.3",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmvaldman/elba.git"
+  },
   "bin": {
     "elba": "./index.js"
   }
